@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIsist - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="chat_container"></div>
+
+      <form>
+        <textarea
+          name="prompt"
+          rows="1"
+          cols="1"
+          placeholder="Ask AIsist.."
+        ></textarea>
+        <button type="submit"><img src="assets/send.svg" /></button>
+      </form>
+    </div>
+
+    <!-- Pop up element -->
+    <div id="popup">
+      <h1>Welcome to AIsist</h1>
+      <p>
+        As an AI assistant, we are here to help you with anything you need. From
+        answering your questions to assisting with tasks and projects, AIsist is
+        designed to make your life easier and more efficient. Thank you for
+        visiting our website! We hope you have a great experience exploring all
+        that AIsist has to offer.
+      </p>
+      <button id="close-button">Close</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
