@@ -29,7 +29,7 @@ async function getTopHeadlines(topic) {
     const response = await axios.get("https://newsapi.org/v2/top-headlines", {
       params: {
         q: topic,
-        apiKey: "e5ab5ede853e41fb93eff487549123dd",
+        apiKey: process.env.NEWS_API_KEY,
         pageSize: 5, // retrieve the top 5 headlines
       },
     });
